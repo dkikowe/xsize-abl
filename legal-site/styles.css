@@ -1,0 +1,138 @@
+:root {
+  --pink: #ec3477;
+  --pink-soft: #fff1f6;
+  --text: #242326;
+  --muted: #777982;
+  --line: #eeeef2;
+  --surface: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(236, 52, 119, 0.12), transparent 34rem),
+    linear-gradient(180deg, #ffffff 0%, #fff8fb 100%);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.shell {
+  margin: 0 auto;
+  max-width: 880px;
+  padding: 48px 22px 64px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.eyebrow {
+  color: var(--pink);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(34px, 7vw, 68px);
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.55;
+  margin: 22px 0 0;
+  max-width: 620px;
+}
+
+.cards {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 34px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  color: inherit;
+  padding: 22px;
+  text-decoration: none;
+}
+
+.card span {
+  display: block;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.card small {
+  color: var(--muted);
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+  margin-top: 9px;
+}
+
+.back-link {
+  color: var(--pink);
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 26px;
+  text-decoration: none;
+}
+
+.document h1 {
+  font-size: clamp(32px, 6vw, 54px);
+  line-height: 1.05;
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-top: 16px;
+  padding: 22px;
+}
+
+section:first-of-type {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+p {
+  color: #60636d;
+  font-size: 16px;
+  line-height: 1.68;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 680px) {
+  .shell {
+    padding-top: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

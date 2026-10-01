@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "TAP Partner",
+    "slug": "xsize-partner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.tappartner.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSLocationWhenInUseUsageDescription": "Приложению необходим доступ к геопозиции для корректной работы функций, связанных с подключением и взаимодействием с устройствами.",
+        "NSBluetoothAlwaysUsageDescription": "Приложению необходим доступ к Bluetooth для подключения и обмена данными с внешними устройствами."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": ""
+        }
+      },
+      "package": "com.tappartner.app"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Разрешите TAP Partner выбрать фотографии для профиля."
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      [
+        "react-native-maps",
+        {
+          "androidGoogleMapsApiKey": "",
+          "iosGoogleMapsApiKey": ""
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "77825441-494e-464e-a77a-9d463db05ae7"
+      }
+    }
+  }
+}

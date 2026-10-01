@@ -1,0 +1,45 @@
+{
+  "name": "xsizepartnerapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1095.0",
+    "@aws-sdk/s3-request-presigner": "^3.1095.0",
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-native-community/datetimepicker": "9.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "expo": "~57.0.20",
+    "expo-font": "~57.0.3",
+    "expo-image-manipulator": "~57.0.16",
+    "expo-image-picker": "~57.0.16",
+    "expo-linear-gradient": "~57.0.1",
+    "expo-status-bar": "~57.0.1",
+    "express": "^5.2.1",
+    "lucide-react": "^1.27.0",
+    "mongoose": "^9.8.0",
+    "multer": "^2.2.0",
+    "react": "19.2.3",
+    "react-dom": "^19.2.3",
+    "react-native": "0.86.3",
+    "react-native-maps": "1.27.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-webview": "13.16.1",
+    "sharp": "^0.35.3"
+  },
+  "scripts": {
+    "api": "node backend/server.js",
+    "admin": "vite --host 0.0.0.0 --config admin/vite.config.js",
+    "admin:build": "vite build --config admin/vite.config.js",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "private": true,
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.4",
+    "vite": "^8.1.5"
+  }
+}
